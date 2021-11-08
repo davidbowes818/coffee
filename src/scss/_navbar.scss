@@ -1,6 +1,9 @@
 @import "vars";
 
 #main-nav {
+  background: url("../img/home_coffee_slider_bg.png") no-repeat center
+    center/cover;
+  min-height: 600px;
   ul {
     display: flex;
     align-items: center;

@@ -9,14 +9,14 @@ export default function Navbar() {
       <div className="container">
         <ul>
           <li>
-            <Link to={"/"} style={navbar} className="current">
+            <Link to={"/"} className="current">
               Resteraunt
             </Link>
           </li>
           <li>
             <Link to={"/menu"}>Menu</Link>
           </li>
-          <StaticImage src="../img/coffee.png" />
+          <StaticImage src="../img/coffee.png" id="nav-logo" />
           <li>
             <Link to={"/gallery"}>Image gallery</Link>
           </li>
