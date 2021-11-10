@@ -1,7 +1,29 @@
 // COLORS
 
-$primary-color: #9f7962;
-$primary-color-hover: #867b6d;
-$secondary-color: #e0c9ac;
-$background-color: #39291f;
-$background-color-dark: #281d16;
+$primary: rgb(83, 53, 35);
+$secondary: rgb(158, 121, 98);
+$light: rgb(224, 201, 172);
+
+$colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "light": $light,
+  "dark": #333,
+);
+
+// SPACING
+
+$base-padding: 0.75rem;
+$base-margin: 0.75rem;
+
+// BORDERS
+
+$base-border-thickness: 1px;
+$base-border-radius: 20px;
+
+// FONT SIZES
+$base-font-size: 1rem;
+$font-size-sm: $base-font-size * 0.75;
+$font-size-md: $base-font-size * 1.5;
+$font-size-lg: $base-font-size * 2;
+$font-size-xl: $base-font-size * 3;

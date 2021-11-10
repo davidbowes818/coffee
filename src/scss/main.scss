@@ -1,22 +1,8 @@
-@import "utlity";
+// VARS & FUNCTIONS
 @import "vars";
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html,
-body {
-  font-size: 10px;
-  line-height: 1.4;
-}
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  list-style: none;
-}
+// BASE STYLES
+@import "base";
+// COLORS
+@import "colors";
+// COMPONENTS (BUTTONS, CARDS, NAVBAR)
+// UTILITIES (MARGIN, PADDING, OPACITIES)
