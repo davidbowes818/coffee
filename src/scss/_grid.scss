@@ -1,3 +1,5 @@
+@use "math";
+
 $breakpoints: (
   "xs": 0,
   "sm": 500px,
@@ -29,5 +31,67 @@ $breakpoints: (
 @mixin xl {
   @media (min-width: map-get($breakpoints: "xl")) {
     @content;
+  }
+}
+
+// BASE COLUMNS VAR
+
+$grid-columns: 12;
+
+// CONTAINER AND ROW
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 20px;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+}
+
+// COLUMN CONTENT
+
+@mixin column-content {
+  flex-grow: 0;
+  width: math.div($i * 100%, $grid-columns);
+}
+
+// COLUMNS
+
+@include xs {
+  @for $i from 1 through $grid-columns {
+    .col-xs-#{$i} {
+      @include column-content();
+    }
+  }
+}
+@include sm {
+  @for $i from 1 through $grid-columns {
+    .col-sm-#{$i} {
+      @include column-content();
+    }
+  }
+}
+@include md {
+  @for $i from 1 through $grid-columns {
+    .col-md-#{$i} {
+      @include column-content();
+    }
+  }
+}
+@include lg {
+  @for $i from 1 through $grid-columns {
+    .col-lg-#{$i} {
+      @include column-content();
+    }
+  }
+}
+@include xl {
+  @for $i from 1 through $grid-columns {
+    .col-xl-#{$i} {
+      @include column-content();
+    }
   }
 }
