@@ -1,0 +1,16 @@
+// MARGINS & PADDING
+
+@for $i from 1 through 3 {
+  .p-#{i} {
+    padding: #{$i} * $base-padding;
+  }
+  .py-#{i} {
+    padding: #{$i} * $base-padding 0;
+  }
+  .m-#{i} {
+    margin: #{$i} * $base-margin;
+  }
+  .my-#{i} {
+    margin: #{$i} * $base-margin 0;
+  }
+}
