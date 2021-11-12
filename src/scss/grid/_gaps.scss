@@ -1,0 +1,14 @@
+// GAPS
+
+$grid-gaps: (
+  "0": 0px,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+);
+
+@each $key, $val in $grid-gaps {
+  .gap-#{$key} > * {
+    gap: #{$val};
+  }
+}
